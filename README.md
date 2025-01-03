@@ -49,9 +49,9 @@ The core of the approach is to construct a complete k-space dataset by merging a
 <div align="center"><img src="https://github.com/yqx7150/GLDM/blob/main/Fig3.png" >  </div>
 The ACS of each frame remains unaltered, while the remainder of the area is filled with data from adjacent frames. The distinct colors rep-resent data contributions from different frames
 
-###  Convergence curves of PSNR and SSIM of GLDM and the number of iterations
+###  Convergence curves of PSNR and MSE of GLDM and the number of iterations
 <div align="center"><img src="https://github.com/yqx7150/GLDM/blob/main/Fig4.png" >  </div>
-Convergence curves of PSNR and SSIM of GLDM and the number of iterations
+Convergence curves of PSNR and MSE of GLDM and the number of iterations
 
 ## Other Related Projects    
   * Homotopic Gradients of Generative Density Priors for MR Image Reconstruction  
