@@ -1,6 +1,8 @@
 ## GLDM
 **Paper**: Zero-shot Dynamic MRI Reconstruction with   Global-to-local Diffusion Model
+
 **Authors**: Yu Guan, Kunlong Zhang, Qi Qi, Dong Wang, Ziwen Ke, Shaoyu Wang, Dong Liang, Qiegen Liu* 
+
 NMR in Biomedicine
 https://arxiv.org/abs/2411.03723
 
