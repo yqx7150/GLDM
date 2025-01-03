@@ -34,12 +34,26 @@ python PCsampling_demo_svd.py
 ```
 
 ## Graphical representation
-### The whole pipeline of GLDM is illustrated in fig_1
-<div align="center"><img src="https://github.com/yqx7150/GLDM/blob/main/fig_1.png" >  </div>
+### The whole pipeline of GLDM is illustrated in Fig_1
+<div align="center"><img src="https://github.com/yqx7150/GLDM/blob/main/Fig_1.png" >  </div>
 The schematic of the proposed GLDM algorithm. Red and blue parts represent the training stage that fully encoded full-resolution reference data is constructed through a time-interleaved acquisition scheme. Red part merges all time frames to train the global model (GM) while the blue part merges local time frames to train the local model (LM). Green part represents the reconstruction stage which the structure of the reconstruction model exists in a cascade form and the under-sampled k-space data (16 frames) are sequentially input into the network. At the same time, optimization unit (OU) containing a LR operator and a DC term is introduced to better remove aliasing and restore details
 
+### Time-interleaved acquisition scheme is visualized in Fig_2.
+<div align="center"><img src="https://github.com/yqx7150/GLDM/blob/main/Fig_2.png" >  </div>
+The core of the approach is to construct a complete k-space dataset by merging any number of adjacent time frames. In the above example, two different under-sampled patterns (uniform and random) at 5-fold acceleration are acquired via a time-interleaved acquisition scheme.
 
+### The time-interleaved acquisition scheme of 4 frames of dynamic MRI is visualized in Fig_3.
+<div align="center"><img src="https://github.com/yqx7150/GLDM/blob/main/Fig_3.png" >  </div>
+The ACS of each frame remains unaltered, while the remainder of the area is filled with data from adjacent frames. The distinct colors rep-resent data contributions from different frames
 
+###  Convergence curves of PSNR and SSIM of GLDM and the number of iterations
+<div align="center"><img src="https://github.com/yqx7150/GLDM/blob/main/Fig_4.png" >  </div>
+Convergence curves of PSNR and SSIM of GLDM and the number of iterations
 
+## Other Related Projects    
+  * Homotopic Gradients of Generative Density Priors for MR Image Reconstruction  
+[<font size=5>**[Paper]**</font>](https://ieeexplore.ieee.org/abstract/document/9435335)   [<font size=5>**[Code]**</font>](https://github.com/yqx7150/HGGDP) [<font size=5>**[Slide]**</font>](https://github.com/yqx7150/HGGDP/tree/master/Slide)  
 
+* One-shot Generative Prior in Hankel-k-space for Parallel Imaging Reconstruction  
+[<font size=5>**[Paper]**</font>](https://arxiv.org/abs/2208.07181)   [<font size=5>**[Code]**</font>](https://github.com/yqx7150/HKGM)   [<font size=5>**[PPT]**</font>](https://github.com/yqx7150/HKGM/tree/main/PPT)
 
